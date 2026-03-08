@@ -1,0 +1,97 @@
+region;annee;mois;visiteurs;hebergement;depense_moyenne
+Occitanie;2021;1;15000;Hote;75.2
+Occitanie;2021;2;18000;Hotel;85.5
+Occitanie;2021;3;25000;Camping;60.1
+Occitanie;2021;4;35000;Hotel;95.0
+Occitanie;2021;5;45000;Hote;88.9
+Occitanie;2021;6;60000;Camping;78.3
+Occitanie;2021;7;95000;Hotel;110.5
+Occitanie;2021;8;120000;Hote;125.7
+Occitanie;2021;9;80000;Hotel;105.1
+Occitanie;2021;10;40000;Camping;80.0
+Occitanie;2021;11;20000;Hote;70.8
+Occitanie;2021;12;15000;Hotel;85.2
+Ile-de-France;2021;1;200000;Hotel;150.5
+Ile-de-France;2021;2;220000;Hotel;155.0
+Ile-de-France;2021;3;280000;Hotel;160.0
+Ile-de-France;2021;4;350000;Hotel;170.0
+Ile-de-France;2021;5;450000;Hotel;180.0
+Ile-de-France;2021;6;550000;Hotel;190.0
+Ile-de-France;2023;7;700000;Hotel;200.0
+Ile-de-France;2023;8;750000;Hotel;210.0
+Ile-de-France;2023;9;600000;Hotel;195.0
+Ile-de-France;2023;10;400000;Hotel;175.0
+Ile-de-France;2023;11;250000;Hotel;160.0
+Ile-de-France;2023;12;210000;Hotel;155.0
+Provence-Alpes-Côte d'Azur;2023;1;25000;Hotel;105.5
+Provence-Alpes-Côte d'Azur;2023;2;30000;Hote;95.0
+Provence-Alpes-Côte d'Azur;2023;3;40000;Camping;80.5
+Provence-Alpes-Côte d'Azur;2019;4;55000;Hotel;115.0
+Provence-Alpes-Côte d'Azur;2023;5;70000;Hote;110.0
+Provence-Alpes-Côte d'Azur;2023;6;90000;Camping;90.0
+Provence-Alpes-Côte d'Azur;2023;7;120000;Hotel;130.0
+Provence-Alpes-Côte d'Azur;2023;8;150000;Hote;140.0
+Provence-Alpes-Côte d'Azur;2023;9;100000;Hotel;125.0
+Provence-Alpes-Côte d'Azur;2023;10;50000;Camping;95.0
+Provence-Alpes-Côte d'Azur;2023;11;35000;Hote;85.0
+Provence-Alpes-Côte d'Azur;2023;12;28000;Hotel;100.0
+Auvergne-RHone-Alpes;2023;1;30000;Hotel;95.5
+Auvergne-RHone-Alpes;2023;2;40000;Hote;85.0
+Auvergne-RHone-Alpes;2023;3;50000;Camping;75.0
+Auvergne-RHone-Alpes;2023;4;65000;Hotel;105.0
+Auvergne-RHone-Alpes;2023;5;80000;Hote;100.0
+Auvergne-RHone-Alpes;2023;6;100000;Camping;85.0
+Auvergne-RHone-Alpes;2023;7;140000;Hotel;125.0
+Auvergne-RHone-Alpes;2023;8;160000;Hote;135.0
+Auvergne-RHone-Alpes;2023;9;110000;Hotel;120.0
+Auvergne-RHone-Alpes;2023;10;60000;Camping;80.0
+Auvergne-RHone-Alpes;2023;11;40000;Hote;70.0
+Auvergne-RHone-Alpes;2023;12;32000;Hotel;90.0
+Occitanie;2023;1;15000;Hote;75.2
+Occitanie;2023;2;18000;Hotel;85.5
+Occitanie;2023;3;25000;Camping;60.1
+Occitanie;2023;4;35000;Hotel;95.0
+Occitanie;2023;5;45000;Hote;88.9
+Occitanie;2020;6;60000;Camping;78.3
+Occitanie;2020;7;95000;Hotel;110.5
+Occitanie;2020;8;120000;Hote;125.7
+Occitanie;2020;9;80000;Hotel;105.1
+Occitanie;2020;10;40000;Camping;80.0
+Occitanie;2023;11;20000;Hote;70.8
+Occitanie;2023;12;15000;Hotel;85.2
+Ile-de-France;2023;1;200000;Hotel;150.5
+Ile-de-France;2023;2;220000;Hotel;155.0
+Ile-de-France;2023;3;280000;Hotel;160.0
+Ile-de-France;2023;4;350000;Hotel;170.0
+Ile-de-France;2023;5;450000;Hotel;180.0
+Ile-de-France;2023;6;550000;Hotel;190.0
+Ile-de-France;2023;7;700000;Hotel;200.0
+Ile-de-France;2023;8;750000;Hotel;210.0
+Ile-de-France;2023;9;600000;Hotel;195.0
+Ile-de-France;2023;10;400000;Hotel;175.0
+Ile-de-France;2023;11;250000;Hotel;160.0
+Ile-de-France;2023;12;210000;Hotel;155.0
+Provence-Alpes-Côte d'Azur;2023;1;25000;Hotel;105.5
+Provence-Alpes-Côte d'Azur;2023;2;30000;Hote;95.0
+Provence-Alpes-Côte d'Azur;2023;3;40000;Camping;80.5
+Provence-Alpes-Côte d'Azur;2023;4;55000;Hotel;115.0
+Provence-Alpes-Côte d'Azur;2023;5;70000;Hote;110.0
+Provence-Alpes-Côte d'Azur;2023;6;90000;Camping;90.0
+Provence-Alpes-Côte d'Azur;2023;7;120000;Hotel;130.0
+Provence-Alpes-Côte d'Azur;2023;8;150000;Hote;140.0
+Provence-Alpes-Côte d'Azur;2023;9;100000;Hotel;125.0
+Provence-Alpes-Côte d'Azur;2023;10;50000;Camping;95.0
+Provence-Alpes-Côte d'Azur;2023;11;35000;Hote;85.0
+Provence-Alpes-Côte d'Azur;2023;12;28000;Hotel;100.0
+Auvergne-RHone-Alpes;2023;1;30000;Hotel;95.5
+Auvergne-RHone-Alpes;2023;2;40000;Hote;85.0
+Auvergne-RHone-Alpes;2023;3;50000;Camping;75.0
+Auvergne-RHone-Alpes;2023;4;65000;Hotel;105.0
+Auvergne-RHone-Alpes;2023;5;80000;Hote;100.0
+Auvergne-RHone-Alpes;2023;6;100000;Camping;85.0
+Auvergne-RHone-Alpes;2023;7;140000;Hotel;125.0
+Auvergne-RHone-Alpes;2023;8;160000;Hote;135.0
+Auvergne-RHone-Alpes;2023;9;110000;Hotel;120.0
+Auvergne-RHone-Alpes;2023;10;60000;Camping;80.0
+Auvergne-RHone-Alpes;2023;11;40000;Hote;70.0
+Auvergne-RHone-Alpes;2023;12;32000;Hotel;90.0
