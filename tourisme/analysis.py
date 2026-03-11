@@ -41,7 +41,9 @@ class TourismeAnalyser:
             "total_visitors": int(df["visiteurs"].sum()),
         }
         if "hebergement" in df.columns:
-            result["accommodation_types"] = sorted(df["hebergement"].unique().tolist())
+            result["accommodation_types"] = sorted(
+                df["hebergement"].dropna().unique().tolist()
+            )
         if "depense_moyenne" in df.columns:
             result["avg_spending_overall"] = round(float(df["depense_moyenne"].mean()), 2)
         return result

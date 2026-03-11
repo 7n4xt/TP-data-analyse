@@ -3,9 +3,10 @@ main.py — CLI entry point for the tourism analysis tool.
 
 Usage
 -----
-  python main.py analyse   --file tourisme_brut.csv
-  python main.py visualize --file tourisme_brut.csv [--output output/]
-  python main.py report    --file tourisme_brut.csv [--output output/]
+  python main.py analyse   --file data/tourisme_brut.csv
+  python main.py visualize --file data/tourisme_brut.csv [--output output/]
+  python main.py report    --file data/tourisme_brut.csv [--output output/]
+  python main.py clean     --file data/donnees_tourisme_france_exercice.csv
 """
 
 from __future__ import annotations
@@ -25,6 +26,17 @@ from tourisme.visualizer import TourismeVisualizer
 # ---------------------------------------------------------------------------
 # Sub-command handlers
 # ---------------------------------------------------------------------------
+
+def cmd_clean(args: argparse.Namespace) -> None:
+    """Load and clean a file, show what was fixed, optionally save cleaned CSV."""
+    df = load_data(args.file, verbose=True)
+    print(f"\nAperçu des données nettoyées ({len(df)} lignes) :")
+    print(df.to_string())
+    if args.save:
+        out = Path(args.save)
+        df.to_csv(out, index=False, sep=";", encoding="utf-8")
+        print(f"\n[clean] Fichier nettoyé sauvegardé : {out}")
+
 
 def cmd_analyse(args: argparse.Namespace) -> None:
     """Load data and print the text analysis report."""
@@ -61,14 +73,27 @@ def build_parser() -> argparse.ArgumentParser:
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Exemples :
-  python main.py analyse   --file tourisme_brut.csv
-  python main.py visualize --file tourisme_brut.csv --output charts/
-  python main.py report    --file mon_fichier.csv   --output resultats/
+  python main.py clean     --file data/donnees_tourisme_france_exercice.csv
+  python main.py clean     --file data/donnees_tourisme_france_exercice.csv --save data/clean.csv
+  python main.py analyse   --file data/tourisme_brut.csv
+  python main.py visualize --file data/tourisme_brut.csv --output output/
+  python main.py report    --file data/tourisme_brut.csv --output output/
         """,
     )
 
     sub = parser.add_subparsers(dest="command", metavar="COMMANDE")
     sub.required = True
+
+    # --- clean ---
+    p_clean = sub.add_parser(
+        "clean",
+        help="Nettoyer un fichier CSV et afficher le résultat (+ export optionnel).",
+    )
+    p_clean.add_argument("--file", "-f", required=True, metavar="CSV",
+                         help="Fichier CSV source (peut être très sale).")
+    p_clean.add_argument("--save", "-s", default=None, metavar="OUTPUT_CSV",
+                         help="Chemin pour sauvegarder le CSV nettoyé (optionnel).")
+    p_clean.set_defaults(func=cmd_clean)
 
     # --- analyse ---
     p_analyse = sub.add_parser(
