@@ -1,0 +1,28 @@
+How to run
+Activate the environment first:
+----------------------
+source env/bin/activate
+----------------------
+
+
+Text analysis report:
+-----------------------
+python main.py analyse --file tourisme_brut.csv
+-----------------------
+
+Generate all 6 PNG charts:
+-----------------------
+python main.py visualize --file tourisme_brut.csv --output output/
+-----------------------
+
+
+Both at once:
+----------------------
+python main.py report --file tourisme_brut.csv --output output/
+----------------------
+
+
+Works with any tourism CSV — just swap the --file path:
+------------------------
+python main.py report --file autre_fichier.csv --output resultats/
+------------------------
